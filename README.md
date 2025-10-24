@@ -12,7 +12,8 @@ This repository contains curated `.instructions.md` and `.prompt.md` files that 
 
 Instructions files (`.instructions.md`) define rules and guidelines that Copilot follows when generating or modifying code. They can be applied globally or to specific file patterns.
 
-- **`azure-devops-mcp.instructions.md`** - Guidelines for working with Azure DevOps MCP Server
+- **`azure-devops-mcp.instructions.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode:chat-instructions/install?url=https://raw.githubusercontent.com/techwatching/copilot-goodies/main/instructions/azure-devops-mcp.instructions.md)
+  - Guidelines for working with Azure DevOps MCP Server
   - Work item creation and management best practices
   - Naming conventions and field requirements
   - Linking and relationship management
@@ -21,26 +22,17 @@ Instructions files (`.instructions.md`) define rules and guidelines that Copilot
 
 Prompt files (`.prompt.md`) are reusable task templates that guide Copilot through complex multi-step operations.
 
-- **`init-github-repository.prompt.md`** - Automates GitHub repository setup
+- **`init-github-repository.prompt.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode:chat-prompt/install?url=https://raw.githubusercontent.com/techwatching/copilot-goodies/main/prompts/init-github-repository.prompt.md)
+  - Automates GitHub repository setup
   - Analyzes workspace and creates appropriate repository
   - Initializes git and pushes code
   - Handles authentication and error scenarios
 
 ## Installation
 
-### Quick Install (Recommended)
+### Quick install
 
-Click the **Install in VS Code** button next to any instruction or prompt to install it directly:
-
-**Instructions:**
-- [Azure DevOps MCP Server](instructions/azure-devops-mcp.instructions.md)<br />
-  [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](vscode:chat-instructions/install?url=https://raw.githubusercontent.com/techwatching/copilot-goodies/main/instructions/azure-devops-mcp.instructions.md)
-
-**Prompts:**
-- [GitHub Repository Setup](prompts/init-github-repository.prompt.md)<br />
-  [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](vscode:chat-instructions/install?url=https://raw.githubusercontent.com/techwatching/copilot-goodies/main/prompts/init-github-repository.prompt.md)
-
-> **Note:** Replace `YOUR-USERNAME` in the URLs above with your GitHub username once you've published this repository.
+Click the **Install in VS Code** button next to any instruction or prompt to install it directly.
 
 ### Manual Installation
 
