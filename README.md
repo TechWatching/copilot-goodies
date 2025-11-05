@@ -12,7 +12,7 @@ This repository contains curated `.instructions.md` and `.prompt.md` files that 
 
 Instructions files (`.instructions.md`) define rules and guidelines that Copilot follows when generating or modifying code. They can be applied globally or to specific file patterns.
 
-- **`azure-devops-mcp.instructions.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode:chat-instructions/install?url=https://raw.githubusercontent.com/techwatching/copilot-goodies/main/instructions/azure-devops-mcp.instructions.md)
+- **`azure-devops-mcp.instructions.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-instructions%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Finstructions%2Fazure-devops-mcp.instructions.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-instructions%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Finstructions%2Fazure-devops-mcp.instructions.md)
   - Guidelines for working with Azure DevOps MCP Server
   - Work item creation and management best practices
   - Naming conventions and field requirements
@@ -22,27 +22,42 @@ Instructions files (`.instructions.md`) define rules and guidelines that Copilot
 
 Prompt files (`.prompt.md`) are reusable task templates that guide Copilot through complex multi-step operations.
 
-- **`init-github-repository.prompt.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode:chat-prompt/install?url=https://raw.githubusercontent.com/techwatching/copilot-goodies/main/prompts/init-github-repository.prompt.md)
+- **`init-github-repository.prompt.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Finit-github-repository.prompt.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Finit-github-repository.prompt.md)
   - Automates GitHub repository setup
   - Analyzes workspace and creates appropriate repository
   - Initializes git and pushes code
   - Handles authentication and error scenarios
 
+### 🤖 Agents
+
+Agent files (`.agent.md`) define specialized AI agents with specific expertise and capabilities for focused tasks.
+
+- **`custom-agent-creator.agent.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fcustom-agent-creator.agent.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fcustom-agent-creator.agent.md)
+  - Specialized agent for creating custom Copilot agents
+  - Guides through agent design and configuration
+  - Helps define agent capabilities and behavior
+
+- **`website-retrospec-generator.agent.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fwebsite-retrospec-generator.agent.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fwebsite-retrospec-generator.agent.md)
+  - Generates retrospective analysis for websites
+  - Analyzes web architecture and design patterns
+  - Provides improvement recommendations
+
 ## Installation
 
 ### Quick install
 
-Click the **Install in VS Code** button next to any instruction or prompt to install it directly.
+Click the **Install in VS Code** or **Install in VS Code Insiders** button next to any instruction, prompt, or agent to install it directly.
 
 ### Manual Installation
 
 **To Install:**
 - Click the install button above for one-click installation, or
-- Download the `*.instructions.md` or `*.prompt.md` files and manually add them to your VS Code settings
+- Download the `*.instructions.md`, `*.prompt.md`, or `*.agent.md` files and manually add them to your VS Code settings
 
 **To Use/Apply:**
 - Instructions automatically apply to Copilot behavior once installed
 - Prompts can be referenced in Copilot Chat by name
+- Agents become available as specialized participants in Copilot Chat
 
 ### Alternative: Workspace-Specific Setup
 
@@ -76,6 +91,16 @@ Example:
 ```
 @workspace Use the init-github-repository prompt to set up this project
 ```
+
+### Using Agents
+
+Once installed, custom agents (chat modes) can be selected in the Chat view:
+
+1. Open GitHub Copilot Chat (`Ctrl+Shift+I` or `Cmd+Shift+I`)
+2. Select the desired agent from the chat mode dropdown list
+3. The agent will respond with its specialized knowledge and capabilities according to its configuration
+
+Custom agents define specialized personas and available tools for specific development tasks like planning, code review, or implementation.
 
 ## Resources
 
