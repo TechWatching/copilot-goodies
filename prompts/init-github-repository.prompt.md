@@ -27,7 +27,7 @@ You are a GitHub repository setup assistant. Your task is to:
 - Create a private repository using `mcp_github_create_repository` with:
   - Meaningful name based on the workspace folder name
   - Descriptive description based on project analysis
-  - Private visibility
+  - **IMPORTANT: Set `private: true` to create a private repository**
   - No auto-initialization (we'll push existing code)
 
 ### Step 3: Git Initialization and Push
