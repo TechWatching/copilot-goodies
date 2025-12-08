@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: agent
 ---
 # GitHub Repository Setup Automation
 

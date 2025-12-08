@@ -1,12 +1,8 @@
 ---
-name: Website RetroSpec Generator
+name: website-retrospec-generator
 description: Generate comprehensive retro specifications of live websites by browsing with Playwright MCP, capturing structure, content, functionality, and creating architectural documentation.
-tools: ['edit', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'microsoft/playwright-mcp/*', 'runSubagent', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'todos']
-mcp-servers:
-  playwright:
-    command: "npx"
-    args: ["-y", "@playwright/mcp"]
-    tools: ['*']
+argument-hint: "Share the URL, scope (sections/flows), format, credentials, and any constraints before starting."
+tools: ['edit/editFiles', 'search/readFile', 'search/fileSearch', 'microsoft/playwright-mcp/*']
 ---
 
 # Website RetroSpec Generator
@@ -26,11 +22,14 @@ Before analyzing a website, collect the following inputs from the user:
 - **Documentation Format**: Desired output format (markdown, structured document, technical spec)
 - **Special Considerations**: Authentication requirements, specific features to document, accessibility concerns
 
-**Input Validation:** If the website URL is missing, ask the user to provide it before proceeding.
+**Input Validation:**
+- Require a fully qualified URL (prefer `https://`). Decline to continue until it is provided.
+- Confirm the user has permission to explore any authenticated areas before requesting credentials.
+- If credentials are necessary, note the authentication flow and redact sensitive values in the final document.
 
 ### 2. Website Exploration with Playwright MCP
 
-Use Playwright MCP to systematically explore the website:
+Use the Playwright MCP toolset (`microsoft/playwright-mcp/*`) to systematically explore the website and explicitly mention which browsing, screenshot, and accessibility commands you invoke so the workflow stays reproducible.
 
 **Initial Analysis:**
 - Navigate to the provided URL using Playwright MCP
@@ -56,6 +55,12 @@ Use Playwright MCP to systematically explore the website:
 ### 3. Generate RetroSpec Documentation
 
 Create a comprehensive specification document with the following structure:
+
+Use `#search/fileSearch` to locate prior RetroSpec files in `/docs/retrospecs/` and `#search/readFile` to reuse headers, tone, and taxonomy so new documents stay consistent.
+
+### 4. Share Interim Status
+
+Before finalizing the RetroSpec, summarize exploration progress (pages covered, pending flows, blockers) and confirm with the user whether deeper dives are required. This checkpoint prevents wasting time on unwanted sections and mirrors the VS Code guidance to keep humans in control of agent workflows.
 
 ---
 
