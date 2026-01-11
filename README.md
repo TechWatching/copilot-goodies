@@ -18,9 +18,21 @@ Instructions files (`.instructions.md`) define rules and guidelines that Copilot
   - Naming conventions and field requirements
   - Linking and relationship management
 
+- **`git-commit.instructions.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-instructions%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Finstructions%2Fgit-commit.instructions.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-instructions%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Finstructions%2Fgit-commit.instructions.md)
+  - Conventional Commits specification guidelines
+  - Commit type definitions (feat, fix, docs, etc.)
+  - Scope and description formatting rules
+  - Issue reference recommendations
+
 ### 🚀 Prompts
 
 Prompt files (`.prompt.md`) are reusable task templates that guide Copilot through complex multi-step operations.
+
+- **`create-ado-pr.prompt.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Fcreate-ado-pr.prompt.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Fcreate-ado-pr.prompt.md)
+  - Creates pull requests on Azure DevOps
+  - Auto-extracts work item numbers from commits
+  - Generates PR title and description from commit history
+  - Supports configurable target branch
 
 - **`init-github-repository.prompt.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Finit-github-repository.prompt.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Finit-github-repository.prompt.md)
   - Automates GitHub repository setup
@@ -36,6 +48,12 @@ Agent files (`.agent.md`) define specialized AI agents with specific expertise a
   - Specialized agent for creating custom Copilot agents
   - Guides through agent design and configuration
   - Helps define agent capabilities and behavior
+
+- **`microsoft-learn-doc-scout.agent.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fmicrosoft-learn-doc-scout.agent.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fmicrosoft-learn-doc-scout.agent.md)
+  - Doc-first research agent using Microsoft Learn MCP server
+  - Answers questions with cited Microsoft documentation
+  - Covers Azure, .NET, and M365 workloads
+  - Provides actionable summaries and guidance
 
 - **`website-retrospec-generator.agent.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fwebsite-retrospec-generator.agent.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-agent%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fagents%2Fwebsite-retrospec-generator.agent.md)
   - Generates retrospective analysis for websites
