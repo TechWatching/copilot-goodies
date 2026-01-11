@@ -20,18 +20,22 @@ The type must be one of the following:
 
 | Type       | Description                                              |
 |------------|----------------------------------------------------------|
-| `feat`     | A new agent, instruction, or prompt                      |
-| `fix`      | A fix to an existing agent, instruction, or prompt       |
-| `docs`     | Documentation changes (README, LICENSE, etc.)            |
-| `style`    | Formatting changes (whitespace, structure, etc.)         |
-| `refactor` | Restructuring without changing behavior                  |
-| `chore`    | Maintenance tasks (renaming, reorganizing files)         |
+| `feat`     | A new feature                                            |
+| `fix`      | A bug fix                                                |
+| `docs`     | Documentation only changes                               |
+| `style`    | Code style changes (formatting, missing semi-colons, etc)|
+| `refactor` | Code change that neither fixes a bug nor adds a feature  |
+| `perf`     | Performance improvements                                 |
+| `test`     | Adding or updating tests                                 |
+| `build`    | Changes to build system or external dependencies         |
+| `ci`       | Changes to CI configuration files and scripts            |
+| `chore`    | Other changes that don't modify src or test files        |
 | `revert`   | Reverts a previous commit                                |
 
 ### 2. Scope (Optional)
 - The scope provides additional context about what part of the codebase is affected
 - Use lowercase, hyphen-separated words
-- Examples: `agents`, `instructions`, `prompts`, `docs`
+- Examples: `api`, `auth`, `db`, `ui`, `deps`
 
 ### 3. Description
 - Use imperative, present tense: "add" not "added" nor "adds"
@@ -40,9 +44,11 @@ The type must be one of the following:
 - Keep it concise but descriptive
 
 ### 4. Issue Reference (Recommended)
-Reference the related GitHub issue or Azure DevOps work item at the end of the description:
+Append the issue or work item number to the commit message using this priority:
 
-- Example: `feat(api): add user export endpoint (#123)`
+1. **From prompt**: Use the issue number if mentioned (e.g., "#123" or "ticket 12345")
+2. **From branch name**: Extract from patterns like `feature/123-description` or `bugfix/AB#123-fix` → `#123` or `AB#123`
+3. **None found**: Proceed without a reference—do not ask for one
 
 ## Examples
 

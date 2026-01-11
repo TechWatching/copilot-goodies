@@ -44,9 +44,11 @@ The type must be one of the following:
 - Keep it concise but descriptive
 
 ### 4. Issue Reference (Recommended)
-Reference the related GitHub issue or Azure DevOps work item at the end of the description:
+Append the issue or work item number to the commit message using this priority:
 
-- Example: `feat(api): add user export endpoint (#123)`
+1. **From prompt**: Use the issue number if mentioned (e.g., "#123" or "ticket 12345")
+2. **From branch name**: Extract from patterns like `feature/123-description` or `bugfix/AB#123-fix` → `#123` or `AB#123`
+3. **None found**: Proceed without a reference—do not ask for one
 
 ## Examples
 
