@@ -20,7 +20,7 @@ The type must be one of the following:
 
 | Type       | Description                                              |
 |------------|----------------------------------------------------------|
-| `feat`     | A new feature                                            |
+| `feat`     | A new feature (e.g., a new prompt, instruction, or agent) |
 | `fix`      | A bug fix                                                |
 | `docs`     | Documentation only changes                               |
 | `style`    | Code style changes (formatting, missing semi-colons, etc)|
