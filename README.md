@@ -40,6 +40,10 @@ Prompt files (`.prompt.md`) are reusable task templates that guide Copilot throu
   - Initializes git and pushes code
   - Handles authentication and error scenarios
 
+- **`save-prompt.prompt.md`** - [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Fsave-prompt.prompt.md) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect?url=vscode-insiders%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Ftechwatching%2Fcopilot-goodies%2Fmain%2Fprompts%2Fsave-prompt.prompt.md)
+  - Generalizes the current discussion into a reusable prompt
+  - Saves the generated prompt to a file
+
 ### 🤖 Agents
 
 Agent files (`.agent.md`) define specialized AI agents with specific expertise and capabilities for focused tasks.
